@@ -72,3 +72,11 @@ enum Department {
   PARK_AND_TREE_TRIMMING
   STREET_LIGHTING
 }
+
+
+enum ContactStatus {
+  UNREAD
+  READ
+  REPLIED
+  ARCHIVED
+}
