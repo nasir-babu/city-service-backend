@@ -13,13 +13,14 @@ import {
 
 const PORT = config.port;
 
+/*
 app.use(
   cors({
 	origin: config.frontend_url,
 	credentials: true,
   }),
 );
-
+*/
 
 const main = async () => {
 	try {

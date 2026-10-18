@@ -29,3 +29,4 @@ model ServiceRequest {
 
   @@map("service_requests")
 }
+

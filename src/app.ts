@@ -20,6 +20,7 @@ import { StaffRoutes } from "./app/module/staff/staff.route";
 import { UserRoutes } from "./app/module/users/users.route";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
+import { PublicRoutes } from "./app/module/public/public.route";
 
 const app: Application = express();
 
@@ -62,6 +63,7 @@ app.use("/api/v1/admin", AdminRoutes);
 app.use("/api/v1/staff", StaffRoutes);
 app.use("/api/v1/comment", CommentRoutes);
 app.use("/api/v1/payments", PaymentRoutes);
+app.router.use("/api/v1/public", PublicRoutes);
 
 // Basic route
 app.get("/", async (req: Request, res: Response) => {
